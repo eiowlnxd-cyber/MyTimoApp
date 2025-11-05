@@ -23,7 +23,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew assembleDebug -x lint -x lintVitalAnalyzeRelease -x lintVitalReportRelease
+      run: ./gradlew assembleDebug
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
