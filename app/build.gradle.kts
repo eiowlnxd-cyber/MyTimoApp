@@ -36,6 +36,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    
+    // ↓↓↓ 我已经在这里为您添加了关闭 lint 检查的代码 ↓↓↓
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
 }
 
 dependencies {
